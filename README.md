@@ -2,7 +2,7 @@
 This project implements an **AI-driven Active Mass Damper (AMD)** system to safeguard Single Degree of Freedom (SDOF) structures against earthquake excitations. It utilizes a hybrid workflow where **Reinforcement Learning (RL)** determines baseline PID gains, and a **Neural Network (NN)** acts as an adaptive controller for comparison.
 ## 📂 Repository Structure ##
 ### 1. Reinforcement Learning (Python) ### 
-- `pid_rl_optimization.ipynb`: The main Jupyter Notebook. Trains the RL agent (PPO/Q-Learning) and exports the optimal gains. Inside the `rl_training` folder
+- `pid_rl_optimization.ipynb`: The main Jupyter Notebook. Trains the RL agent (PPO/Q-Learning) and exports the optimal gains. Inside the `rl_training` folder. For more information, open `README.md` inside the folder.
 - `RL_gains.txt`: (Auto-generated) The output file containing the tuned parameters ($K_p, K_i, K_d$) passed from Python to MATLAB.
 ### 2. Neural Network & Validation (MATLAB) ### 
 - `AI_Comparison.m`: **Run this file**. It is the main automation script that:
